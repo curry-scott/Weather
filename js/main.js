@@ -32,7 +32,7 @@ async function callAPI() {
     let name = data.name;
     let temp = data.main.temp;
     let description = data.weather[0].main;
-    let fhite = ((temp - 273.15) * 1.8) + 32;
+    let fahrenheit = ((temp - 273.15) * 1.8) + 32;
     let celsius = temp - 273.15;
     
 
@@ -40,7 +40,7 @@ async function callAPI() {
     document.getElementById('degree').style = "";
     document.getElementById('city').textContent = name;
     document.getElementById('kelvin').textContent = temp + "°";
-    document.getElementById('fahrenheit').textContent = roundNum(fhite) + "°";
+    document.getElementById('fahrenheit').textContent = roundNum(fahrenheit) + "°";
     document.getElementById('celsius').textContent = roundNum(celsius) + "°";
     document.getElementById('condition').textContent = description;
  
