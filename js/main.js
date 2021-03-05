@@ -3,8 +3,9 @@ let api = "https://api.openweathermap.org/data/2.5/weather?zip="
  
 let apiid = ",us&appid=";
  
-let key = "2a891f25c80028033b31396fe83cee9e";
+let key = "3c336d65720f0a577ad196c669788490";
  
+// degrees to 
 function roundNum(x) {
     return x.toFixed(0)
 }
