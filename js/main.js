@@ -7,7 +7,7 @@ let key = "3c336d65720f0a577ad196c669788490";
  
 // degrees to 
 function roundNum(x) {
-    return x.toFixed(0)
+    return x.toFixed(2)
 }
  
 var input = document.getElementById('zip')
@@ -18,12 +18,14 @@ input.addEventListener("keyup", function (event) {
         callAPI();
     }
 })
- 
+ // calling to get api
 async function callAPI() {
     var zipcode = document.getElementById('zip').value;
     const response = await fetch(api + zipcode + apiid + key);
     const data = await response.json();
  
+
+    // invalid message
     if (data.cod == "404") {
         return alert("invalid zipcode")
     }
