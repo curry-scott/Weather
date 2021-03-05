@@ -2,7 +2,7 @@
 
 <head>
     <title>Weather</title>
-    <!-- Required meta tags -->
+   
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
@@ -17,7 +17,8 @@
             <div class="col col-sm-12 col-md-8 col-lg-6 offset-lg-3">
                 <label>Zip Code:</label>
                 <input type="text" id="zip" title="5 digit zip code" required><br><br>
-                <button onclick="callAPI()" class="btn bg-primary border-secondary btn-primary text-white" title="Check Weather">Check Weather</button>
+                <button onclick="callAPI()" class="btn bg-primary border-secondary btn-primary text-white"
+                    title="Check Weather">Check Weather</button>
                 <h1 id="city" class="text-secondary">
                 </h1>
             </div>
@@ -26,27 +27,19 @@
     <div id="degree" class="container text-center mt-3 bg-warning border-secondary rounded" style="display:none">
         <div class="row pt-3">
             <div class="col-6 col-lg-3 col-sm-6">
-                <h5 class="text-white">
-                    Fahrenheit: <br>
-                </h5>
+                <h4>Fahrenheit:</h4>
                 <p id="fahrenheit"></p>
             </div>
             <div class="col-6 col-lg-3 col-sm-6">
-                <h5 class="text-white">
-                    Kelvin: <br>
-                </h5>
+                <h4>Kelvin:</h4>
                 <p id="kelvin"></p>
             </div>
             <div class="col-6 col-lg-3 col-sm-6">
-                <h5 class="text-white">
-                    Celsius: <br>
-                </h5>
+                <h4>Celsius:</h4>
                 <p id="celsius"></p>
             </div>
             <div class="col-6 col-lg-3 col-sm-6">
-                <h5 class="text-white">
-                    Condition: <br>
-                </h5>
+                <h4>Condition:</h4>
                 <p id="condition"></p>
             </div>
         </div>

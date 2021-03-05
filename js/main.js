@@ -6,7 +6,7 @@ let apiid = ",us&appid=";
 let key = "2a891f25c80028033b31396fe83cee9e";
  
 function roundNum(x) {
-    return x.toFixed(2)
+    return x.toFixed(0)
 }
  
 var input = document.getElementById('zip')
@@ -26,11 +26,11 @@ async function callAPI() {
     if (data.cod == "404") {
         return alert("invalid zipcode")
     }
-    const name = data.name;
-    const temp = data.main.temp;
-    const description = data.weather[0].main;
-    const fhite = ((temp - 273.15) * 1.8) + 32;
-    const celsius = temp - 273.15;
+    let name = data.name;
+    let temp = data.main.temp;
+    let description = data.weather[0].main;
+    let fhite = ((temp - 273.15) * 1.8) + 32;
+    let celsius = temp - 273.15;
     
 
     //retreiving 
